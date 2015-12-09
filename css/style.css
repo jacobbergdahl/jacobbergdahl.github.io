@@ -1,6 +1,11 @@
-/* ============================== */
-/* == Web Fonts ================= */
-/* ============================== */
+/* ============================================ */
+/* ============================================ */
+/* == Written by Jacob Bergdahl =============== */
+/* ============================================ */
+/* ============================================ */
+
+
+
 
 
 /* ============================== */
@@ -14,7 +19,8 @@
 body {
   color: #000;
   margin: 0;
-  font: 1em/1.5 Helvetica, Arial, sans-serif;
+  font: 1.1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  background: rgb(250, 250, 250);
 }
 
 h1,
@@ -23,31 +29,30 @@ h3 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Change these */
 h1 {  
-  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+  font-family: 'Lobster', 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
   font-size: 6.625rem;
   font-weight: normal;
   line-height: 1.3; 
-  /* text-shadow: 0 1px 1px rgba(0,0,0,.8); */
   margin: 12px 0 0;
-  text-shadow: 0px 1px 1px rgba(0,0,0,.8);
+  /* text-shadow: 0px 1px 1px rgba(0,0,0,.8); */
 }
 
 h2 {
-  font-size: 2em; /* 53px/16px  */
+  font-family: 'Lobster Two', Helvetica, Arial, sans-serif;
+  font-size: 2em;
   font-weight: normal;
-  margin: 0 0 .5em; /* 0 0 26px */
+  margin: 0 0 .5em;
 }
 
 h3 {
-  font-size: 1.5em; /* 20px/16px  */
+  font-size: 1.3em;
   line-height: 1.2;
   font-weight: normal;
 }
 
 /* ============================== */
-/* == Pseudo-classes ============ */
+/* == Links (pseudo) ============ */
 /* ============================== */
 
 a:link {
@@ -67,87 +72,49 @@ a:active {
   color: #FF9D30;
 }
 
-.screenie:hover, .screenie-computer:hover {
-  z-index: 1;
-  position: relative;
-  cursor: pointer;
+.header-links a:link,
+.header-links a:visited {
+  font-family: 'Grand Hotel', Georgia, serif;
+  color: #99570D;
+  text-decoration: none;  
+}
+
+.header-links a:hover {
+  color: #FF9116;  
+}
+
+#header-icon-linkedin:hover {
+  opacity: 0.6;
 }
 
 /* ============================== */
 /* == Main Styles =============== */
 /* ============================== */
 
+#menu {
+  display: none;
+}
+
 .main-content-margins {
   margin: 30px 0px;
 }
 
-body {
-  background: rgb(250, 250, 250);
-}
-
-.main-header,
-.main-footer,
+#main-header,
+#main-footer,
 .indented,
 #portfolio-content {
 	padding-left: 20%;
 	padding-right: 20%;
 }
 
-.main-header {
-  padding-top: 100px;
-	height: 300px;
-	background: linear-gradient(0deg, rgb(250, 250, 250), transparent),
-		url('../img/header.jpg') top no-repeat;
-	background-size: cover;
-}
-
-.main-footer {
-  margin-top: 50px;
-  padding-top: 100px;
-	height: 700px;
-	background: linear-gradient(0deg, transparent, rgb(250, 250, 250)),
-		url('../img/header.jpg') bottom no-repeat;
-	background-size: cover;
-}
-
-#profile-picture {
-	width: 150px;
-	height: 150px;
-	border-radius: 150px;
-	background-image: url('../img/jacob.jpg');
-	background-position: top;
-	background-size: 150px;
-	background-repeat: no-repeat;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-  float: left;
-  margin-right: 20px;
-  /* box-shadow: 4px 4px 5px rgba(0,0,0,.8); */
-  border: 1px solid black;
-}
-
-.header-text {
-  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
-}
-
-.header-title,
-.header-links,
-.header-links {
-  display: block;
-}
-
-.header-title {
-  font-size: 3em;
-}
-
 .top-border {
   border-top: 2px solid #FF9116;
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-/* Change this filler */
 .img-filler {
   width: 90px;
   margin-top: 25px;
@@ -157,30 +124,113 @@ body {
   margin-right: auto;
 }
 
-.summary {
-  text-align: center;
-  font-size: 1.25em;
-}
-
-.main-footer {
-  text-align: center;
-}
-
 .highlight {
   color: #FF9116;
   font-weight: bold;
 }
 
-#main-screenie {
-  width: 300px;
+/* */
+
+#main-header {
+  padding-top: 100px;
+	height: 400px;
+	background: linear-gradient(0deg, rgb(250, 250, 250), transparent),
+		url('../img/header.jpg') top no-repeat;
+	background-size: cover;
+}
+
+#profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-image: url('../img/jacob.jpg');
+  background-position: top;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  float: left;
+  margin-right: 20px;
+  /* box-shadow: 4px 4px 5px rgba(0,0,0,.8); */
+  border: 1px solid black;
+}
+
+#header-subtitle,
+#header-section-links {
+  font-family: 'Grand Hotel',Georgia,serif;
+  font-size: 1.7rem;
+  line-height: 1.2em;
+  margin-left: 1px;
+}
+
+#header-section-links {
+  margin-left: 3px;
+}
+
+#header-icon-linkedin {
+  width: 30px;
   height: auto;
+  margin-left: 20px;
+}
+
+#header-link-linkedin {
+  display: none;
+}
+
+#header-title,
+#header-section-links,
+#header-section-links {
+  display: inline-block;
+}
+
+#header-title {
+  margin-top: 0px;
+  font-size: 3.3em;
+}
+
+#summary {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#portfolio-content-intro {
+  min-height: 530px;
+}
+
+#main-footer {
+  margin-top: 50px;
+  padding-top: 100px;
+	height: 700px;
+	background: linear-gradient(0deg, transparent, rgb(250, 250, 250)),
+		url('../img/header.jpg') bottom no-repeat;
+	background-size: cover;
+}
+
+#main-footer {
+  text-align: center;
+}
+
+.anchors {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+/* == Sub-section for screenshots =============== */
+
+#main-screenie {
+  width: auto;
+  height: 530px;
   float: left;
   margin-left: 10%;
   margin-right: 15px;
 }
 
-.screenie, .screenie-computer {
-  width: 150px;
+.screenie, 
+.screenie-computer {
+  position: relative;
+  width: 17%; /* Alt. is to replace with a static 150px */
   height: auto;
   box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.5);
   margin-top: 10px;
@@ -198,16 +248,338 @@ body {
   margin-left: -120px;
 }
 
-/* Not working */
-#portfolio-content {
-  margin-left: 10px;
+.screenie:hover, 
+.screenie-computer:hover {
+  z-index: 100;
+  cursor: pointer;
+}
+
+.s1 {
+  z-index: 10;
+}
+
+.s2 {
+  z-index: 9;
+}
+
+.s3 {
+  z-index: 8;
+}
+
+.s4 {
+  z-index: 7;
+}
+
+.s5 {
+  z-index: 6;
+}
+
+.s6 {
+  z-index: 5;
+}
+
+.s7 {
+  z-index: 4;
+}
+
+.s8 {
+  z-index: 3;
+}
+
+.s9 {
+  z-index: 2;
+}
+
+.s10 {
+  z-index: 1;
 }
 
 /* ============================== */
-/* == Layout Styles ============= */
+/* == Media queries ============= */
+/* ============================== */
+/* == Oh, there's a lot. ======== */
 /* ============================== */
 
+@media (min-width: 1980px) {
+  #main-header,
+  #main-footer,
+  .indented,
+  #portfolio-content {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  
+  .top-border {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  #main-screenie {
+    margin-left: 18%;
+  }
+}
 
-/* ============================== */
-/* == Web Fonts ================= */
-/* ============================== */
+@media (min-width: 1400px) {
+  #header-subtitle,
+  #header-section-links {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1330px) {
+  #main-header,
+  #main-footer,
+  .indented,
+  #portfolio-content {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  
+  .top-border {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 1140px) {
+  #main-header,
+  #main-footer,
+  .indented,
+  #portfolio-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .top-border {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  #header-subtitle,
+  #header-section-links {
+    font-family: 'Grand Hotel',Georgia,serif;
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 853px) {
+  #main-header,
+  #main-footer,
+  .indented,
+  #portfolio-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .top-border {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #profile-picture {
+    float: none;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    background-size: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+  }
+  
+  #main-header {
+    padding-top: 70px;
+    text-align: center;
+    height: 550px;
+  }
+  
+  .screenie, .screenie-computer {
+    width: 150px;
+  }
+
+  
+  #main-screenie {
+    height: 400px;
+    margin-left: 2%;
+    margin-bottom: 1%;
+  }
+  
+  .s5, .s6, .s7, .s8, .s9, .s10 {
+    display: none;
+  }
+  
+  .screenie-secondary-computer {
+    display: none;
+  }
+  
+  #header-subtitle,
+  #header-section-links {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    margin-left: 0px;
+  }
+  
+  h1 {
+    margin: 8px 0 0;
+  }
+  
+  #menu {
+    display: inline;
+    position: fixed;
+    background: rgb(255,145,22);
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.5);
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1000;
+  }
+  
+  #menu a:link,
+  #menu a:hover,
+  #menu a:visited,
+  #menu a:active {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Lobster Two', 'Grand Hotel',Georgia,serif;
+    font-size: 1.7rem;
+  }
+  
+  .menu-item {
+    width: 25%;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .menu-item-border {
+    border-right: 1px solid black;
+  }
+  
+  .menu-item:hover,
+  .menu-item:active {
+    background: rgb(255,200,138);
+  }
+}
+
+@media (max-width: 560px) {
+  #main-header,
+  #main-footer,
+  .indented,
+  #portfolio-content {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .top-border {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  
+  #profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+  }
+  
+  #main-header {
+    padding-top: 60px;
+    height: 410px;
+  }
+  
+  #main-screenie {
+    height: 300px;
+  }
+  
+  #summary {
+    font-size: 1.2em;
+  }
+  
+  h1 {
+    margin: 6px 0 0;
+  }
+  
+  #menu a:link,
+  #menu a:hover,
+  #menu a:visited,
+  #menu a:active {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 512px) {
+  #main-header,
+  #main-footer,
+  .indented,
+  #portfolio-content {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .top-border {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  #profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-size: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+  }
+  
+  #main-header {
+    padding-top: 55px;
+    height: 360px;
+  }
+  
+  #main-screenie {
+    display: none;
+  }
+  
+  .s4, .s3 {
+    display: none;
+  }
+  
+  .screenie-secondary-computer {
+    display: none;
+  }
+  
+  #summary {
+    font-size: 1em;
+  }
+  
+  #header-icon-linkedin {
+    display: none;
+  }
+  
+  #header-link-linkedin {
+    display: inline;
+    font-size: 1.4rem;
+    line-height: 1em;
+  }
+  
+  h1 {
+    margin: 2px 0 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #menu a:link,
+  #menu a:hover,
+  #menu a:visited,
+  #menu a:active {
+    font-size: 1.2rem;
+  }
+  
+  #header-title {
+    font-size: 3rem;
+  }
+}

@@ -1,28 +1,325 @@
+<!-- ====================================== -->
+<!-- ====================================== -->
+<!-- == Written by Jacob Bergdahl ========= -->
+<!-- ====================================== -->
+<!-- ====================================== -->
+
+<!-- Known issue: Screenshots look weird on Chrome. It might just be
+	because of how Chrome displays downscaled images, or it might be
+	a problem with my CSS. -->
+
+<!-- Next version: Should have a more pleasant-looking menu for mobile
+	devices, rather than my quick hack. Might want to use FlexBox. -->
+
+<!-- Confession: I have not tested this website on Safari or Opera
+	even once. Uh-oh. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Jacob Bergdahl - Student, developer, designer, lover</title>
+	<title>Jacob Bergdahl - Student, developer, designer</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="js/reportcard/css/badges.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster+Two|Lobster|Grand+Hotel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8"/>
 </head>
 <body>
-	<header id="header" class="main-header">
+	<!-- ====================================== -->
+	<!-- == MENU (mobile only) ================ -->
+	<!-- ====================================== -->
+	<div id="menu">
+		<a href="#anchor-summary" class="menu-item menu-item-border">
+			<div>
+				Summary
+			</div>
+		</a>
+		<a href="#anchor-skills" class="menu-item menu-item-border">
+			<div>
+				Skills
+			</div>
+		</a>
+		<a href="#anchor-portfolio" class="menu-item menu-item-border">
+			<div>
+				Portfolio
+			</div>
+		</a>
+		<a href="#anchor-experience" class="menu-item">
+			<div>
+				Experience
+			</div>
+		</a>
+	</div>
 
+	<!-- ====================================== -->
+	<!-- == HEADER ============================ -->
+	<!-- ====================================== -->
+	<header id="main-header">
+		<div id="profile-picture"></div>
+		<div id="header-text">
+			<h1 id="header-title">Jacob Bergdahl</h1>
+			<a href="https://se.linkedin.com/in/jacobbergdahl/en" target="_blank"><img id="header-icon-linkedin" src="img/linkedin.png" alt="Icon to my LinkedIn profile" /></a><br />
+			<div class="header-links"> <!-- Mobile only (replaces icon), though maybe I should remove it altogether -->
+				<a href="https://se.linkedin.com/in/jacobbergdahl/en" id="header-link-linkedin" target="_blank">linkedin.com/in/jacobbergdahl</a>
+			</div>
+			<span id="header-subtitle">Student in information systems at Uppsala University, Sweden.</span><br />
+			<div id="header-section-links" class="header-links">
+				<a href="mailto:jacob_bergdahl@live.se">jacob_bergdahl@live.se</a>
+			</div>
+		</div>
 	</header>
-
+	
+	<!-- ====================================== -->
+	<!-- == MAIN CONTENT ====================== -->
+	<!-- ====================================== -->
 	<div class="main-content"> 
+		<!-- ====================================== -->
+		<!-- == SUMMARY =========================== -->
+		<!-- ====================================== -->
 		<div class="top-border"></div>
-		<div class="summary">
+		<div id="anchor-summary" class="anchors"></div>
+		<div id="summary">
 			<div class="main-content-margins">
 				<p class="indented">
-					Thanks for stopping by! My portfolio website will be up and running shortly. I started working on this website on 2015-12-06, and while there's much left to finish, it should be done in just a few days.<br /><br />
-					All the best, Jacob Bergdahl
+					<span class="highlight">Innovations are what drives humanity forwards</span>, and the IT industry is a great place to experience, envision and create real innovations. While I'm still a mere student, and will be until the summer of 2016, I strive to push the boundaries of technology, and am actively educating myself to reach a point where I can make a difference. <span class="highlight">I love learning new things</span>, and I love technology. I love working with awesome people who also have a bright vision of the future. Ten years from now, I see myself as a developer or consultant in the IT-industry, be it in Sweden or elsewhere.
 				</p>
 				<img class="img-filler" src="img/building_1.png" alt="Filler image of a building" />
 			</div>
 		</div>
+
+		<!-- ====================================== -->
+		<!-- == SKILLS ============================ -->
+		<!-- ====================================== -->
+		<div class="top-border"></div>
+		<div id="anchor-skills" class="anchors"></div>
+		<div id="skills">
+			<div class="main-content-margins">
+				<h2 class="main-content-header indented">Skills</h2>
+				<p class="indented">
+					I've always considered myself a perfectionist when it comes to <span class="highlight">writing</span> and <span class="highlight">speaking</span>. I have years of experience with both of these skills, both from my studies and from my time working with marketing. Naturally, I'm fluent in Swedish and English, and to ensure my proficiency in English, I've also taken additional courses in English at University level. I work well both alone and in groups.
+				</p>
+				<p class="indented">
+					In terms of technical skills, I have experience with an array of programming languages: <span class="highlight">Java</span>, <span class="highlight">C#</span>, <span class="highlight">Ruby</span>, <span class="highlight">Javascript</span>, <span class="highlight">PHP</span>, <span class="highlight">Python</span>, <span class="highlight">Swift</span>, and of course <span class="highlight">SQL</span>. On top of this, I'm experienced with the style sheet language <span class="highlight">CSS</span> and multiple mark-up languages, including <span class="highlight">XML</span> and <span class="highlight">HTML</span>. The programming languages that I'm currently the most confident with are Java and C#. I've spent a lot of my spare time building native <span class="highlight">Android apps</span> in Java, and C# was the main programming language that we used at my University studies, and is one that I've also had use for when experimenting with the game engine <span class="highlight">Unity</span> and the cross-platform mobile IDE <span class="highlight">Xamarin</span>. I'm learning Swift and <span class="highlight">Objective-C</span> for <span class="highlight">iOS</span> development. Ruby was a programming language that I learned merely for fun, while Javascript and PHP were languages that I learned for web development at my University. Finally, I have a very good understanding of object-oriented principles. 
+				</p>
+				<p class="indented">
+					Furthermore, I'm well experienced with <span class="highlight">Adobe Illustrator</span> and <span class="highlight">Adobe Photoshop</span>. User interface and user experience are extremely important to me, and it saddens me every time I see these aspects overlooked. The user should always be in focus, and understanding how to make software that is not only visually appealing, but also generates increased engagement, is key to a successful product. 
+				</p>
+				<img class="img-filler" src="img/building_2.png" alt="Filler image of a building" />
+			</div>
+		</div>
+
+		<!-- ====================================== -->
+		<!-- == PORTFOLIO ========================= -->
+		<!-- ====================================== -->
+		<div class="top-border"></div>
+		<div id="anchor-portfolio" class="anchors"></div>
+		<div id="portfolio">
+			<div class="main-content-margins">
+				<img id="main-screenie" src="img/screens/red-hawk_full.png" alt="Screenshot of an app"/>
+				<div id="portfolio-content">
+					<div id="portfolio-content-intro">
+						<h2 class="main-content-header">Portfolio</h2>
+						<p>
+							I'm still a student, and I will be until at least summer of 2016, and as a student studying more than full-time and also working part-time, it can be hard to find the spare time to create projects, but I do my best. The projects listed here are projects that I've created in my spare time. I didn't want to include my school projects, because I can't see them as "my own". While most of these projects are Android apps built in Java, I want to stress that I've built applications in many IDE's and languages, and that I don't want to give away the image that I am exclusively interested in Android development. I simply found mobile development to be fun, interesting and not too complicated for a rookie. It became a sandbox where I could experiment and get instant feedback. Like I mentioned above, I'm also learning iOS-development, and I am familiar with C# and its various uses. As for the web; I built my first website when I was ten years old. Of course, it had garbage HTML and in-line CSS, along with free-to-use copy/paste Javascript that truly made it look like a late 90's/early 00's website. Over the years however, I've not been focusing as much on web development. I've made a few websites using Javascript and PHP at my University, but they're not even remotely interesting enough to display. And for what it's worth, I built this very simple website from the ground up.
+						</p>
+					</div>
+
+					<h3 class="main-content-subheader">Jacob's Design Playground</h3>
+					<p>
+						This was one of the very first apps that I created. I made it during a summer while I was simultaneously learning Adobe Illustrator, and thus this app is nothing but a collection of single-screen, functionless designs. This app was a way for me to fully understand how Android controllers work (activities, adapters, etc.), and also how XML works in Android and finally how vector graphics can be used to create assets for apps.
+					</p>
+					<a href="img/screens/jdp_1.png" target="_blank">
+						<img class="screenie s1" src="img/screens/jdp_1.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/jdp_3.png" target="_blank">
+						<img class="screenie screenie-secondary s2" src="img/screens/jdp_3.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/jdp_6.png" target="_blank">
+						<img class="screenie screenie-secondary s3" src="img/screens/jdp_6.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/jdp_4.png" target="_blank">	
+						<img class="screenie screenie-secondary s4" src="img/screens/jdp_4.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/jdp_5.png" target="_blank">
+						<img class="screenie screenie-secondary s5" src="img/screens/jdp_5.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/jdp_7.png" target="_blank">
+						<img class="screenie screenie-secondary s6" src="img/screens/jdp_7.png" alt="Screenshot of an app"/>
+					</a>
+
+					<h3 class="main-content-subheader">Encu</h3>
+					<p>
+						Encu is an app for encrypting pieces of text. It uses a decently advanced formula of the Ceaser cipher, but of course, no matter how advanced it is, it's still a Caesar cipher. You can put a suit on a goat, but it's still just a goat. I never intended to create any ground-breaking encryption algorithms with this app, it was just another practicing step for me. The app allows users to easily encrypt or decrypt pieces of text. Encrypted texts can be saved to the device. As this was an early project for me, adding internet features was out of scope, and thus users cannot send encrypted texts to each other. Rather, they can copy texts, and then send them via text, e-mail, or whatever they please. This can create a bad user experience, I acknowledge that, but this app was of course never intended to be released on Google Play. Oh, and you might be wondering why there are two keys rather than just one. From a technical standpoint, using the second optional key doesn't really make much of a difference, it was more an idea for the user to have the ability to use a secondary key that he or she may store in a separate way than they store the first key. Users also like to use numbers that mean something, and so this way, they can reduce the chance of anyone finding out their keys, by having two of them that must be used together.
+					</p>
+					<p>
+						The design that I made for the app is quite unusual for an Android app, though I've grown fond of it myself. The idea for pixel-perfect rectangles came from looking at the Windows Phone operating system. The colour scheme for my app uses three tints of bluegrey, and every element has some level of transparency. It all creates an interesting look. Whitespace is kept to an absolute minimum in favour of boldness. Trust me, the interface feels better when you see it on an actual device. While looking at the screenshots below, one big oversight can be seen at the bottom of the third screen (not visible if you're viewing this website on a mobile; I know, I know). The button to the left says "cancel", while the button to the right says "back". In retrospect, it's unintuitive to have anything but "continue" on the right side, but my idea was that the large "continue" button above would be clear enough.
+					</p>
+					<a href="img/screens/encu_1.png" target="_blank">
+						<img class="screenie s1" src="img/screens/encu_1.png" alt="Screenshot of an app">
+					</a>
+					<a href="img/screens/encu_2.png" target="_blank">
+						<img class="screenie screenie-secondary s2" src="img/screens/encu_2.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/encu_3.png" target="_blank">
+						<img class="screenie screenie-secondary s3" src="img/screens/encu_3.png" alt="Screenshot of an app"/>	
+					</a>
+					<a href="img/screens/encu_4.png" target="_blank">
+						<img class="screenie screenie-secondary s4" src="img/screens/encu_4.png" alt="Screenshot of an app"/>
+					</a>
+
+					<h3 class="main-content-subheader">Natara</h3>
+					<p>
+						This was my first app that collected data from the internet, using JSON. There's not much to say about the app, it's just a simple and pointless weather app. On the central tab, the user can get an overview of today's weather. To the right is an overview of the week, and to the left is an overview of the next 24 hours.
+					</p>
+					<a href="img/screens/natara_1.png" target="_blank">
+						<img class="screenie s1" src="img/screens/natara_1.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/natara_2.png" target="_blank">
+						<img class="screenie screenie-secondary s2" src="img/screens/natara_2.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/natara_3.png" target="_blank">
+						<img class="screenie screenie-secondary s3" src="img/screens/natara_3.png" alt="Screenshot of an app"/>	
+					</a>
+
+					<h3 class="main-content-subheader">Other Various Android Projects</h3>
+					<p>
+						I've made many tech demos, such as one named Red Hawk, where I've been trying out transitions, animations and more. At the time of writing this, I started work on a notebook app just a week ago. The idea is to have all notes in one place, with a simple-to-use interface, split into four tabs. The user can store regular notes, as well as hidden notes, and the user will have the option to set a password for these hidden notes. There will also be to-do and to-buy lists, where the user can very quickly add and remove items.
+					</p>
+					<a href="img/screens/notebook_1.png" target="_blank">
+						<img class="screenie s1" src="img/screens/notebook_1.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/notebook_2.png" target="_blank">
+						<img class="screenie screenie-secondary s2" src="img/screens/notebook_2.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/red-hawk_1.png" target="_blank">
+						<img class="screenie screenie-secondary s3" src="img/screens/red-hawk_1.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/red-hawk_2.png" target="_blank">
+						<img class="screenie screenie-secondary s4" src="img/screens/red-hawk_2.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/dd_1.png" target="_blank">
+						<img class="screenie screenie-secondary s5" src="img/screens/dd_1.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/du_1.png" target="_blank">
+						<img class="screenie screenie-secondary s6" src="img/screens/du_1.png" alt="Screenshot of an app"/>
+					</a>
+
+					<h3 class="main-content-subheader">Early .NET Projects</h3>
+					<p>
+						As soon as I had finished my first course in C#, which was incidentally my first course in programming altogether, I was excited to try to make some software all on my own. First I made a practically non-graphical turn-based game called "The Cave". It took an insane amount of time, but I got it done and it's functional, even if it's not a very exciting game. I also made a talkbot; that is, a bot that can talk to you. It also took an immense amount of time, and it works somewhat okay. I've been considering redoing the talkbot entirely as a phone app, using more advanced techniques, however it's a very time-consuming task, and a pretty pointless one at that, since every operating systems manufacturer has their own talkbot. Still, both of these projects were fun and presented many challenges that taught me a lot of things along the way.
+					</p>
+					<a href="img/screens/the-cave_1.png" target="_blank">
+						<img class="screenie-computer s1" src="img/screens/the-cave_1.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/the-cave_2.png" target="_blank">
+						<img class="screenie-computer screenie-secondary-computer s2" src="img/screens/the-cave_2.png" alt="Screenshot of an app"/>
+					</a>
+					<a href="img/screens/talkbot.png" target="_blank">
+						<img class="screenie-computer screenie-secondary-computer s3" src="img/screens/talkbot.png" alt="Screenshot of an app"/>
+					</a>
+
+					<img class="img-filler" src="img/building_3.png" alt="Filler image of a building" />
+				</div>
+			</div>
+		</div>
+
+		<!-- ====================================== -->
+		<!-- == EXPERIENCE ======================== -->
+		<!-- ====================================== -->
+		<div class="top-border"></div>
+		<div id="anchor-experience" class="anchors"></div>
+		<div id="experience">
+			<div class="main-content-margins">
+				<h2 class="main-content-header indented">Experience</h2>
+				<p class="indented">
+					If you're interested in seeing a full list of all my University courses, which includes courses such as object-oriented programming, databases, information security, media analysis and much more, please check out my <a href="https://se.linkedin.com/in/jacobbergdahl/en">LinkedIn page</a>, which is available in both Swedish and English. I'm studying information systems at Uppsala University (and I also took a course in Android development at University of Gavle). I've learned a lot regarding systems development: the ideas behind it, the budgets, the diagrams and all other components. Of course, I've also learned the principles of object-oriented programming there. I've taken additional courses in media- and communication, practical English and more, which have also taught me a great deal in their respective areas.
+				</p>
+				<p class="indented">
+					Apart from my studies at universities, I've also studied at online platforms, such as Treehouse, Udacity, Udemy, Codecadamy, Lynda, Khan, and more. The platform that I've spent the most time on so far is <a href="https://teamtreehouse.com/jacobbergdahl" target="_blank">Team Treehouse</a>.
+				</p>
+				<div class="report-card treehouse"></div>
+				<img class="img-filler" src="img/building_4.png" alt="Filler image of a building" />
+			</div>
+		</div>
+	</div>
+
+	<!-- ====================================== -->
+	<!-- == FOOTER ============================ -->
+	<!-- ====================================== -->
+	<div class="top-border"></div>
+	<footer id="main-footer">
+		<p>This website was created by myself in 2015. If you want to get in touch, send me an email at 
+		<a href="mailto:jacob_bergdahl@live.se">jacob_bergdahl@live.se</a>.<br /><br/>The font Lobster is made by Pablo Impallari and the font Grand Hotel is made by Astigmatic.<br />They are used under the <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL" target="blank">SIL Open Font License 1.1</a>.</p>
+		<a href="#top">Back to top</a>
+	</footer>
+
+	<!-- ====================================== -->
+	<!-- == JAVASCRIPT ======================== -->
+	<!-- ====================================== -->
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/reportcard/js/reportcard.js"></script>
+	<script>
+	$('.report-card.treehouse').reportCard({
+	    userName: 'jacobbergdahl',
+	    site: 'treehouse',
+	    badgesAmount: 7
+	});
+	</script>
 </body>
 </html>
+
+<!-- ====================================== -->
+<!-- ====================================== -->
+<!-- == *knock knock*             ========= -->
+<!-- == "Who's there?"            ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == ...                       ========= -->
+<!-- == "Java"                    ========= -->
+<!-- ====================================== -->
+<!-- ====================================== -->
