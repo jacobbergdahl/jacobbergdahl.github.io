@@ -56,20 +56,20 @@ h3 {
 /* ============================== */
 
 a:link {
-  color: #99570D;
+  color: #7D4200;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #99570D;
+  color: #7D4200;
 }
 
 a:hover {
-  color: #FFB25B;
+  color: #C96A00;
 }
 
 a:active {
-  color: #FF9D30;
+  color: #C96A00;
 }
 
 .header-links a:link,
