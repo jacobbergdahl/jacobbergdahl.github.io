@@ -373,8 +373,8 @@ a:active {
   }
   
   .top-border {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   
   #profile-picture {
@@ -475,11 +475,6 @@ a:active {
     padding-right: 3%;
   }
   
-  .top-border {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  
   #profile-picture {
     width: 150px;
     height: 150px;
@@ -521,11 +516,6 @@ a:active {
   #portfolio-content {
     padding-left: 2%;
     padding-right: 2%;
-  }
-  
-  .top-border {
-    margin-left: 2%;
-    margin-right: 2%;
   }
   
   #profile-picture {
@@ -579,6 +569,7 @@ a:active {
   #menu a:visited,
   #menu a:active {
     font-size: 1.2rem;
+    margin-top: 3px;
   }
   
   #header-title {
