@@ -197,8 +197,8 @@ a:active {
 }
 
 #main-footer {
-  margin-top: 50px;
-  padding-top: 100px;
+  margin-top: 30px;
+  padding-top: 10px;
 	height: 700px;
 	background: linear-gradient(0deg, transparent, rgb(250, 250, 250)),
 		url('../img/header.jpg') bottom no-repeat;
