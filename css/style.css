@@ -19,7 +19,7 @@
 body {
   color: #000;
   margin: 0;
-  font: 1.1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font: 1.1em/1.7 "Helvetica Neue", Helvetica, Arial, sans-serif; 
   background: rgb(250, 250, 250);
 }
 
@@ -405,7 +405,6 @@ a:active {
     width: 150px;
   }
 
-  
   #main-screenie {
     height: 400px;
     margin-left: 2%;
@@ -482,15 +481,7 @@ a:active {
   }
 }
 
-@media (max-width: 560px) {
-  #main-header,
-  #main-footer,
-  .indented,
-  #portfolio-content {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  
+@media (max-width: 560px) {  
   #profile-picture {
     width: 150px;
     height: 150px;
@@ -498,6 +489,11 @@ a:active {
     background-size: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
+  }
+  
+  p {
+    font-size: 0.95em;
+    line-height: 1.7;
   }
   
   #main-header {
@@ -530,14 +526,6 @@ a:active {
 }
 
 @media (max-width: 512px) {
-  #main-header,
-  #main-footer,
-  .indented,
-  #portfolio-content {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  
   #profile-picture {
     width: 100px;
     height: 100px;
