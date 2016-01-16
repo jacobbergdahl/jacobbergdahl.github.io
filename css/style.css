@@ -192,6 +192,14 @@ a:active {
   font-size: 1.25em;
 }
 
+#intro_text {
+  /* Currently not in use */
+  text-align: center;
+  font-size: 1.1em;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
 #portfolio-content-intro {
   min-height: 530px;
 }
