@@ -226,11 +226,15 @@ a:active {
 
 /* == Sub-section for screenshots =============== */
 
+#main-screenie-extra-margin {
+  margin-left: 20%;
+}
+
 #main-screenie {
-  width: auto;
+  width: auto; /* 302px */
   height: 530px;
   float: left;
-  margin-left: 10%;
+  margin-left: -151px; /* width / 2 */
   margin-right: 15px;
 }
 
@@ -316,13 +320,10 @@ a:active {
     padding-right: 25%;
   }
   
-  .top-border {
+  .top-border,
+  #main-screenie-extra-margin {
     margin-left: 25%;
     margin-right: 25%;
-  }
-  
-  #main-screenie {
-    margin-left: 18%;
   }
   
   #header-subtitle,
@@ -380,6 +381,10 @@ a:active {
   #portfolio-content {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  
+  #main-screenie-extra-margin {
+    margin-left: 0; /* from here on, #main-screenie's own margins are used, as there's no longer a need for this additional margin */
   }
   
   .top-border {
