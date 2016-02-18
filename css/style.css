@@ -195,9 +195,14 @@ a:active {
 #intro_text {
   /* Currently not in use */
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1rem;
   font-style: italic;
-  margin-bottom: 0px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#intro_text span {
+  font-style: normal;
 }
 
 #portfolio-content-intro {
@@ -470,10 +475,11 @@ a:active {
     width: 25%;
     height: 100%;
     margin: auto;
+    border-right: 1px solid black;
   }
   
-  .menu-item-border {
-    border-right: 1px solid black;
+  .menu-item:last-child {
+    border: none;
   }
   
   .menu-item:hover {
@@ -652,5 +658,16 @@ a:active {
   
   .menu-text {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 330px) {
+    #header-title {
+    font-size: 2.5rem;
+  }
+  
+  #header-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.4em;
   }
 }
