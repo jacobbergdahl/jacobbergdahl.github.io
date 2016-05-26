@@ -93,10 +93,10 @@
 		<div id="summary">
 			<div class="main-content-margins">
 				<p class="indented">
-					<span class="highlight">Innovations drive the world forward</span>, and the IT industry is a great place to experience, envision and create real innovations. While I'm still a mere student, and will be until the summer of 2016, I strive to push the boundaries of technology, and am actively educating myself to reach a point where I can make a difference. <span class="highlight">I love learning new things</span>, I love working with awesome people who also have a bright vision of the future, and I love technology. I get a rush from seeing the latest innovations in internet of things, self-driving cars and big data, seeing the design of the latest smartwatch, trying the latest VR-demo, seeing screenshots of the next version of Windows, seeing the future video games, analysing the UX of products and learning new programming languages. Simply put: <span class="highlight">I have a passion for technological wonders</span>. Ten years from now, I see myself as a developer or consultant in the IT-industry, be it in Sweden or elsewhere.
+					<span class="highlight">Innovations drive the world forward</span>, and the IT industry is a great place to experience, envision and create real innovations. While I'm still a mere student, and will be for a while longer, I strive to push the boundaries of technology, and am actively educating myself to reach a point where I can make a difference. <span class="highlight">I love learning new things</span>, I love working with awesome people who also have a bright vision of the future, and I love technology. I get a rush from seeing the latest innovations in internet of things, self-driving cars and big data, seeing the design of the latest smartwatch, trying the latest VR-demo, seeing screenshots of the next version of Windows, seeing the future video games, analysing the UX of products and learning new programming languages. Simply put: <span class="highlight">I have a passion for technological wonders</span>. Ten years from now, I see myself as a developer or consultant in the IT-industry, be it in Sweden or elsewhere.
 				</p>
 				<p class="indented" id="intro_text" >
-					<span class="highlight">Latest message (2016-02-17)</span><br />I want to say a big thank you to all the people who have reached out to me and shown interest in myself and my future. I am currently on my last semester of my University studies, and am excited to truly start my career. Also, more projects should soon show up in my portfolio below. I'm taking some very intensive studies right now which occupies much of my time, but I am always looking for time to build new things.
+					<span class="highlight">Latest message (2016-05-26)</span><br />I haven't been updating this website in a while as life has been quite busy lately. Next semester, I intend to start stuyding for a master's degree, so I'm currently not looking for a full-time job, however I will be looking for a relevant part-time job in Uppsala.
 				</p>
 				<img class="img-filler" src="img/building_1.png" alt="Filler image of a building" />
 			</div>
@@ -135,7 +135,7 @@
 					<div id="portfolio-content-intro">
 						<h2 class="main-content-header">Portfolio</h2>
 						<p>
-							I'm still a student, and I will be until at least summer of 2016, and as a student studying more than full-time and also working part-time, it can be hard to find the spare time to create projects, but I do my best. The projects listed here are projects that I've created in my spare time. I didn't want to include my school projects, because I don't see them as "my own". <span class="highlight">While most of these projects are Android apps built in Java, I want to stress that I've built applications in many IDE's and languages</span>, and that I don't want to give away the image that I am exclusively interested in Android development. I simply found mobile development to be fun, interesting and not too complicated for a rookie. It became a sandbox where I could experiment and get instant feedback. Like I mentioned above, I'm also learning iOS-development, and I am familiar with C# and its various uses. As for the web; I built my first website when I was ten years old. Of course, it had garbage HTML and in-line CSS, along with free-to-use copy/paste Javascript that truly made it look like a late 90's/early 00's website. Over the years however, I've not been focusing as much on web development. I've made a few websites using Javascript and PHP at my University, but they're not even remotely interesting enough to display. And for what it's worth, I built this very simple website from the ground up.
+							As a student studying more than full-time and also working part-time, it can be hard to find the spare time to create projects, but I do my best. The projects listed here are projects that I've created in my spare time. I didn't want to include my school projects, because I don't see them as "my own". <span class="highlight">While most of these projects are Android apps built in Java, I want to stress that I've built applications in many IDE's and languages</span>, and that I don't want to give away the image that I am exclusively interested in Android development. I simply found mobile development to be fun, interesting and not too complicated for a rookie. It became a sandbox where I could experiment and get instant feedback. Like I mentioned above, I'm also learning iOS-development, and I am familiar with C# and its various uses. As for the web; I built my first website when I was ten years old. Of course, it had garbage HTML and in-line CSS, along with free-to-use copy/paste Javascript that truly made it look like a late 90's/early 00's website. Over the years however, I've not been focusing as much on web development. I've made a few websites using Javascript and PHP at my University, but they're not even remotely interesting enough to display. And for what it's worth, I built this very simple website from the ground up.
 						</p>
 					</div>
 
@@ -237,16 +237,11 @@
 	});
 	</script>
 	<script>
-		var hasRotated = false;
 		if (!/Mobi/.test(navigator.userAgent)) {
+			var deg = 180;
 			$(".img-filler").click(function() {
-				if (!hasRotated) {
-					document.querySelector('body').style.cssText = "transform:rotateZ(180deg); transition: all 1s;"
-					hasRotated = true;
-				} else {
-					document.querySelector('body').style.cssText = "transform:rotateZ(360deg); transition: all 1s;"
-					hasRotated = false;
-				}
+				document.querySelector('body').style.cssText = "transform:rotateZ(" + deg + "deg); transition: all 1s;"	
+				deg = deg == 180 ? 360 : 180;
 			});
 		}
 	</script>
