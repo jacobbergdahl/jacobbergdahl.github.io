@@ -346,10 +346,9 @@ a:active {
   }
 }
 
-@media (min-width: 1400px) {
-  #header-subtitle,
-  #header-section-links {
-    /*font-size: 1.6rem; */
+@media (max-width: 1450px) {  
+  .screenie-computer {
+    max-width: 250px;
   }
 }
 
@@ -428,8 +427,11 @@ a:active {
     height: 550px;
   }
   
-  .screenie, .screenie-computer {
+  .screenie {
     width: 150px;
+  }
+  .screenie-computer {
+    max-width: 200px;
   }
 
   #main-screenie {
@@ -443,7 +445,7 @@ a:active {
   }
   
   .screenie-secondary-computer {
-    display: none;
+    /* display: none; */
   }
   
   #header-subtitle,
@@ -577,7 +579,7 @@ a:active {
   }
   
   .screenie-secondary-computer {
-    display: none;
+    margin-left: -80px;
   }
   
   #summary {
@@ -655,6 +657,10 @@ a:active {
   #top-border-header {
     margin-top: 15px;
   }
+  
+  .screenie-secondary-computer {
+    margin-left: -120px;
+  }
 }
 
 @media (max-width: 340px) {
@@ -678,5 +684,9 @@ a:active {
   #header-subtitle {
     font-size: 1.1rem;
     line-height: 1.4em;
+  }
+  
+  .screenie-secondary-computer {
+    display: none;
   }
 }
